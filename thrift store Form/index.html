@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a Thrift Product</title>
+    <link rel="icon" href="https://aartisto.com/wp-content/uploads/2020/11/myntra-1200x900.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add a New Thrift Product</h1>
+        <div class="guidelines">
+            <p><strong>Guidelines:</strong></p>
+            <ul>
+                <li>You can thrift only 1 product every 3 months. Once a product is sold, you can add more.</li>
+                <li>Also an item cannot be thrifted before 2 months of purchase.</li>
+                <li>You will be responsible for paying the delivery charges for product pickup from your home when it is ordered by a customer.</li>
+                <li>The price of the product will be decided by Myntra based on the age of the product.</li>
+                <li>Enter the correct age of the product. Incorrect information can lead to your account being blacklisted.</li>
+                <li>A 10% commission will be charged on each product sold.</li>
+            </ul>
+        </div>
+        <form id="thriftForm">
+            <div class="form-section">
+                <h2>Basic Information</h2>
+                <label for="productTitle">Product Title:</label>
+                <input type="text" id="productTitle" name="productTitle" required>
+                
+                <label for="category">Category:</label>
+                <select id="category" name="category" required>
+                    <option value="Men">Men</option>
+                    <option value="Women">Women</option>
+                    <option value="Kids">Kids</option>
+                </select>
+
+                <label for="brand">Brand:</label>
+                <input type="text" id="brand" name="brand" required>
+
+                <label for="orderId">Order ID:</label>
+                <input type="text" id="orderId" name="orderId" required>
+
+                <label for="condition">Condition:</label>
+                <select id="condition" name="condition" required>
+                    <option value="New">New</option>
+                    <option value="Like New">Like New</option>
+                    <option value="Good">Good</option>
+                    <option value="Fair">Fair</option>
+                </select>
+
+                <label for="age">Age of Item:</label>
+                <select id="age" name="age" required>
+                    <option value="6 months">< 6 months</option>
+                    <option value="12 months">6-12 months</option>
+                    <option value="18 months">12-18 months</option>
+                    <option value="24 months">18-24 months</option>
+                </select>
+            </div>
+
+            <div class="form-section">
+                <h2>Detailed Information</h2>
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+
+                <label for="material">Material:</label>
+                <input type="text" id="material" name="material" required>
+
+                <label for="color">Color:</label>
+                <input type="color" id="color" name="color" required>
+                <div id="colorDisplay" class="color-display"></div>
+                <p></p>
+
+                <label for="size">Size:</label>
+                <select id="size" name="size" required>
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                    <option value="XXXL">XXXL</option>
+                </select>
+
+                <label for="price">Price:</label>
+                <input type="text" id="price" name="price" disabled placeholder="Determined by Myntra">
+            </div>
+
+            <div class="form-section">
+                <h2>Images</h2>
+                <label for="images">Upload Images:</label>
+                <input type="file" id="images" name="images" multiple required>
+            </div>
+
+            <div class="form-section">
+                <h2>Additional Information</h2>
+                <label for="discount">Price Brought at:</label>
+                <input type="text" id="discount" name="discount">
+
+                <label for="stockQuantity">Stock Quantity:</label>
+                <input type="text" id="stockQuantity" name="stockQuantity" required>
+
+                <label for="tags">Tags:</label>
+                <input type="text" id="tags" name="tags" placeholder="Comma-separated keywords">
+            </div>
+
+            <div class="form-section">
+                <button type="button" onclick="previewForm()">Preview</button>
+                <button type="submit">Submit</button>
+                <a href="../PRODUCT PAGE/prodcut.html" class="back-button">
+                    <button type="button" onclick="goBack()">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                            <path fill="currentColor" d="M14.71 6.71a.996.996 0 0 0 0-1.41L13.41 4.29a.996.996 0 0 0-1.41 0L6.7 10.29c-.38.39-.39 1.02 0 1.41l5.3 5.3c.39.39 1.02.39 1.41 0l1.3-1.3a.996.996 0 0 0 0-1.41L10.12 12l4.59-4.59c.38-.39.38-1.02 0-1.4z"/>
+                        </svg>
+                        <div id="backtext">Back</div>
+                    </button>
+                </a>
+                
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

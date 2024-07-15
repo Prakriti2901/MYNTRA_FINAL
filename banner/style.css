@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.container{
+    padding: 0 1vw;
+    margin: auto;
+}
+header{
+    position: relative;
+    top: 0;
+    background-color: white;
+    height: 90px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.left > img{
+    width: 53px;
+    height: 53px;
+}
+nav ul li{
+    list-style: none;
+    padding: 0 14px;
+}
+nav{
+    font-size: 17px;
+    padding-top: 14px;
+}
+
+.desktop-newNavLink {
+    margin: 0 0 34px -2px;
+    font-size: 11px;
+    font-weight: bolder;
+    color: #ff3f6c;
+}
+.search{
+    width: 34vw;
+    border: none;
+    border-radius: 5px;
+    padding: 11px 17px;
+    background-color: #f5f5f6;
+}
+.nav-items > p{
+    font-size: 12px;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.homeImg{
+    width: 100vw;
+    height: 80vh;
+
+    /* margin: 12px 0; */
+}
+.homeImg100vw{
+    width: 100vw;
+}
+.homeImg90vw{
+    width: 90vw;
+}
+.homeImg50vw{
+    width: 48vw;
+}
+.section-2{
+    width: 100vw;
+}
+.section-2 > img{
+    width: calc(100vw/6);
+}
+
+
+.image-link {
+    display: inline-block; 
+    text-decoration: none; 
+    width: 40%; 
+    max-width: 16%;
+    height: 50%;
+    
+}
+
+.image-link img {
+    display: block; 
+    width: 100%; 
+    height: 50%; 
+}
+
+#contest{
+    text-decoration: none;
+    color: black;
+}
